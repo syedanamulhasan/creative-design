@@ -413,3 +413,31 @@ margin: 2rem 0;
 .scroll-up-btn:hover{
     background-color: #32e7ff;
 }
+/* responsive */
+@media(max-width:1400px){
+    .floating-bg{
+        top: -120vw;
+    }
+    .section-1-heading{
+        font-size: 6rem;
+        top: 25vw;
+        width: 70rem;
+    }
+    .navbar-link{
+        font-size: 2rem;
+    }
+    .logo{
+        top: 75%;
+    }
+    .logo i{
+        font-size: 10rem;
+    }
+    .section-heading{
+        font-size: 8rem;
+        margin-bottom: 10rem;
+    }
+    .section-2{
+        height: auto;
+    }
+}
+/* end of responsive */
