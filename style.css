@@ -205,8 +205,18 @@ margin: 2rem 0;
     padding: 1rem 1rem 2rem 1rem;
     box-shadow: 1rem 1rem 2rem #ddd,
     -1rem -1rem 2rem #eee;
-    position: relative;
-    
+    position: relative; 
+    opacity: 0.7; 
+    transition: opacity 0.5s;
+}
+.team-member:hover{
+    opacity: 1;
+}
+.team-member:first-child{
+    align-self: flex-start;
+}
+.team-member:last-child{
+    align-self: flex-end;
 }
 .team-member img{
     width: 100%;
