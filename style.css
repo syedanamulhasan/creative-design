@@ -331,6 +331,7 @@ margin: 2rem 0;
     box-shadow: 0.3rem 0.3rem 0.4rem #ccc,
     -0.1rem --0.1rem 0.4rem #ccc;
     border-radius: 0.5rem;
+    perspective: 100rem;
 }
 .form-img{
     width: 55rem;
@@ -339,6 +340,11 @@ margin: 2rem 0;
     opacity: 0.8;
     box-shadow: -3rem 3rem 4rem #aaa;
     border-radius: 0.5rem;
+    transform: rotateY(20deg);
+}
+.form-img:hover{
+    transform: translateY(-2rem) rotateY(20deg);
+    box-shadow: -5rem 5rem 7rem #aaa;
 }
 .contact-form{
     width: 45rem;
@@ -348,6 +354,12 @@ margin: 2rem 0;
     padding: 3rem;
     border-radius: 0.5rem;
     box-shadow: 3rem 3rem 4rem #aaa;
+    transform: rotateY(-20deg);
+    transition: all 0.5s;
+}
+.contact-form:hover{
+    transform: translateY(-2rem) rotateY(-20deg);
+    box-shadow: 5rem 5rem 7rem #aaa;
 }
 .contact-form input,
 .contact-form textarea{
@@ -359,5 +371,26 @@ margin: 2rem 0;
     border-radius: 2rem;
     box-shadow: inset 0.1rem 0.1rem 0.2rem #ddd,
     inset -0.1rem -0.1rem 0.2rem #ddd;
+}
+.contact-form textarea{
+    max-height: 15rem;
+    min-height: 10rem;
+    max-width: 100%;
+    min-width: 70%;
+}
+.contact-form input[type="submit"]{
+    background-color: rgba(50,231,255,0.8);
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing: 0.5rem;
+}
+.contact-form input[type="submit"]:hover{
+    background-color: #32e7ff;
+}
+.copyright{
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    color: #444;
+    margin-top: 5rem;
 }
 /* end of section 4 */
